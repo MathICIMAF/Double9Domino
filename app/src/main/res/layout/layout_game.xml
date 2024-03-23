@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/game_fragment" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amg.double9domino.widget.Table android:id="@+id/game_table" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingBottom="20dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal"  android:id="@+id/game_tiles" android:layout_width="wrap_content" android:gravity="bottom" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/game_pass" android:layout_width="wrap_content" android:layout_height="match_parent" android:gravity="bottom" android:layout_toRightOf="@+id/game_tiles" android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/game_tiles"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

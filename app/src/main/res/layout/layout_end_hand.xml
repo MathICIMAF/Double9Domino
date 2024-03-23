@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:text="@string/game_team_name" style="@style/TeamMembers"/>
+            <TextView android:text="@string/game_score_hand" style="@style/EndHandScore"/>
+            <TextView android:text="@string/game_score_total" style="@style/EndHandScore"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/game_team1" android:text="@string/profile_name" style="@style/TeamMembers"/>
+            <TextView android:id="@+id/game_team1_score_hand" android:text="@string/game_sample_score1" style="@style/EndHandScore"/>
+            <TextView android:id="@+id/game_team1_score_game" android:text="@string/game_sample_score2" style="@style/EndHandScore"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/game_team2" android:text="@string/profile_name" style="@style/TeamMembers"/>
+            <TextView android:id="@+id/game_team2_score_hand" android:text="@string/game_sample_score2" style="@style/EndHandScore"/>
+            <TextView android:id="@+id/game_team2_score_game" android:text="@string/game_sample_score3" style="@style/EndHandScore"/>
+        </LinearLayout>
+        <TableLayout android:id="@+id/game_team1_player1" android:layout_width="match_parent" style="@style/RemainingTiles"/>
+        <TableLayout android:id="@+id/game_team1_player2" android:layout_width="match_parent" style="@style/RemainingTiles"/>
+        <TableLayout android:id="@+id/game_team2_player1" android:layout_width="match_parent" style="@style/RemainingTiles"/>
+        <TableLayout android:id="@+id/game_team2_player2" android:layout_width="match_parent" style="@style/RemainingTiles"/>
+    </LinearLayout>
+</merge>

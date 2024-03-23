@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearanceHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/facebook" android:textAllCaps="true"/>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranking_classic_single" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/ranking_facebook_classic_singleplayer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="openFacebookRanking"/>
+    </RelativeLayout>
+    <TextView android:textAppearance="@style/TextAppearanceHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/google" android:textAllCaps="true"/>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/ranking_google_signout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_signout" android:layout_alignParentLeft="true" android:onClick="signOutGoogle"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranking_achievements" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/ranking_google_achievements" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="openGoogleAchievements"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranking" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/ranking_google_classic_singleplayer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="openGoogleRankings"/>
+    </RelativeLayout>
+</LinearLayout>

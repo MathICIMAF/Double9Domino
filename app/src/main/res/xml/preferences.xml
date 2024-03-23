@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/entries" android:title="@string/options_maximum_score" android:key="limit_score" android:summary="@string/select_max" android:defaultValue="100" android:entryValues="@array/entries"/>
+    <CheckBoxPreference android:title="@string/first_hand_double" android:defaultValue="false" android:key="first_hand" ></CheckBoxPreference>
+</PreferenceScreen>

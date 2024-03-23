@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/chalkboard" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:id="@+id/game_score_team1" android:text="@string/game_team_name" style="@style/Chalk"/>
+        <TextView android:id="@+id/game_score_team2" android:text="@string/game_team_name" style="@style/Chalk"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/game_scores" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>
